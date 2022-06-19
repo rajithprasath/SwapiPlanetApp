@@ -1,5 +1,9 @@
 package com.rajith.swapiplanetapp.domain.models
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Planet(
     val climate: String,
     val created: String,
@@ -15,4 +19,4 @@ data class Planet(
     val surface_water: String,
     val terrain: String,
     val url: String
-)
+) : Parcelable

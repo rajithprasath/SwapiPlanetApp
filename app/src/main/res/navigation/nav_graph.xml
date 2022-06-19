@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/planetListFragment">
+
+    <fragment
+        android:id="@+id/planetListFragment"
+        android:name="com.rajith.swapiplanetapp.presentation.list.fragment.PlanetListFragment"
+        android:label="PlanetListFragment" >
+        <action
+            android:id="@+id/action_planetListFragment_to_planetDetailFragment"
+            app:destination="@id/planetDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/planetDetailFragment"
+        android:name="com.rajith.swapiplanetapp.presentation.detail.fragment.PlanetDetailFragment"
+        android:label="PlanetDetailFragment">
+
+    <argument
+        android:name="planet"
+        app:argType="com.rajith.swapiplanetapp.domain.models.Planet" />
+    </fragment>
+
+
+</navigation>
