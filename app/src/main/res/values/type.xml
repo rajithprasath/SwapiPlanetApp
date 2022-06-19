@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Customized typography for selected components-->
+
+    <!--Title (Planet Item - Name, PlanetDetailFragment - Header)-->
+    <style name="PlanetApp.Title" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+    <!-- Sub Title (Planet Item - Climate, PlanetDetailFragment - Details ) -->
+    <style name="PlanetApp.SubTitle" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <!-- Toolbar Titles -->
+    <style name="PlanetApp.ToolbarText" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/poppins_semibold</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <!--Headline 5 (Planet - title)-->
+    <style name="PlanetAppHeadline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Headline 4 (Planet - orbital period)-->
+    <style name="PlanetAppOrbitalPeriodText" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/assistiveColor</item>
+    </style>
+
+</resources>
