@@ -38,6 +38,24 @@ android {
         viewBinding = true
         dataBinding = true
     }
+
+    defaultConfig {
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+    android {
+        sourceSets {
+            String sharedTestDir = 'src/sharedTest/resources'
+            test {
+                resources.srcDirs += sharedTestDir
+            }
+            androidTest {
+                resources.srcDirs += sharedTestDir
+            }
+        }
+    }
 }
 
 dependencies {
@@ -57,9 +75,11 @@ dependencies {
     def navigation = "2.4.2"
     def espresso = "3.3.0"
     def googleTruth = "1.0"
-    def barista = "3.7.0"
+    def assertjVersion = '3.19.0'
     def androidxJunit = "1.1.2"
     def junit = "4.13.2"
+    def junitVersion = '5.7.0'
+    def mockVersion = '1.10.5'
     def androidxArchTest = "2.1.0"
     def daggerHilt = "2.40"
     def daggerHiltViewModel = "1.0.0-alpha03"
@@ -99,10 +119,20 @@ dependencies {
     debugImplementation "com.squareup.leakcanary:leakcanary-android:2.4"
 
     //TEST SUITE
+
+    testImplementation "com.google.dagger:hilt-android-testing:$daggerHilt"
+    kaptTest "com.google.dagger:hilt-android-compiler:$daggerHilt"
+
     androidTestImplementation "androidx.test:runner:$testCoreRunner"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso"
     androidTestImplementation "androidx.test.ext:junit:$androidxJunit"
 
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+    testImplementation "io.mockk:mockk:$mockVersion"
+    androidTestImplementation "org.assertj:assertj-core:$assertjVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:$espresso"
+    implementation "androidx.test.espresso:espresso-idling-resource:$espresso"
+    implementation "androidx.test.espresso:espresso-contrib:$espresso"
 
     testImplementation "androidx.arch.core:core-testing:$androidxArchTest"
     testImplementation "junit:junit:$junit"
