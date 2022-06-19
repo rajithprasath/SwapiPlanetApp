@@ -5,5 +5,5 @@ import com.rajith.swapiplanetapp.domain.models.Planet
 import kotlinx.coroutines.flow.Flow
 
 interface PlanetRepository {
-    suspend fun getPlanet(page: Int): Flow<PlanetResult<List<Planet?>>>
+    suspend fun getPlanet(page: Int): Flow<PlanetResult<List<Planet>>>
 }

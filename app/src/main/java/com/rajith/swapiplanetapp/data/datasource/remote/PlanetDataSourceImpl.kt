@@ -10,7 +10,7 @@ class PlanetDataSourceImpl @Inject constructor(
     private val api: PlanetApi
 ) : PlanetDataSource {
 
-    override suspend fun getPlanets(page: Int): PlanetResult<List<Planet?>> {
+    override suspend fun getPlanets(page: Int): PlanetResult<List<Planet>> {
         return try {
             val result = api.getPlanets(page)
             if (result.isSuccessful) {

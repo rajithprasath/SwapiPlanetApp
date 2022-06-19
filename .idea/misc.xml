@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rajith.p/Documents/Assignment/SwapiPlanetApp/app/src/main/res/drawable/backdrop_image_gradient.xml" value="0.1695" />
         <entry key="..\:/Users/rajith.p/Documents/Assignment/SwapiPlanetApp/app/src/main/res/font/poppins.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/rajith.p/Documents/Assignment/SwapiPlanetApp/app/src/main/res/layout/activity_main.xml" value="0.15989583333333332" />
-        <entry key="..\:/Users/rajith.p/Documents/Assignment/SwapiPlanetApp/app/src/main/res/layout/fragment_planet_list.xml" value="0.15625" />
+        <entry key="..\:/Users/rajith.p/Documents/Assignment/SwapiPlanetApp/app/src/main/res/layout/fragment_planet_detail.xml" value="0.1" />
+        <entry key="..\:/Users/rajith.p/Documents/Assignment/SwapiPlanetApp/app/src/main/res/layout/fragment_planet_details.xml" value="0.1" />
+        <entry key="..\:/Users/rajith.p/Documents/Assignment/SwapiPlanetApp/app/src/main/res/layout/fragment_planet_list.xml" value="0.1" />
+        <entry key="..\:/Users/rajith.p/Documents/Assignment/SwapiPlanetApp/app/src/main/res/layout/item_planet.xml" value="0.14719202898550723" />
       </map>
     </option>
   </component>

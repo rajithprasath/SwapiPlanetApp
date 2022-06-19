@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">SwapiPlanetApp</string>
 
-    <!--Common-->
     <string name="error_network">Please check your Internet Connection.</string>
     <string name="error_unexpected_message">Something went wrong, please try again.</string>
     <string name="error_timeout_message">Timeout reached, please try again.</string>
     <string name="error_server_message">Unable to connect to server, please try again.</string>
     <string name="error_client_message">Sorry, Unable to connect, please try again.</string>
     <string name="text_empty_placeholder">"No Items Available"</string>
+    <string name="retry">Retry</string>
+    <string name="lbl_climate">Climate - </string>
+    <string name="lbl_orbital_period">Orbital Period - </string>
+    <string name="lbl_gravity">Gravity - </string>
 
 </resources>

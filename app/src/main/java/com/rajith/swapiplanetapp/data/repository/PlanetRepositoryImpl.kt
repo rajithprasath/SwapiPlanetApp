@@ -13,7 +13,7 @@ class PlanetRepositoryImpl @Inject constructor(
     private val dataSource: PlanetDataSource
 ) : PlanetRepository {
 
-    override suspend fun getPlanet(page: Int): Flow<PlanetResult<List<Planet?>>> {
+    override suspend fun getPlanet(page: Int): Flow<PlanetResult<List<Planet>>> {
         return flow {
             dataSource.getPlanets(page).run {
                 when (this) {
