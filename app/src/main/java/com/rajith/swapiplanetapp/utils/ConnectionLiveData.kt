@@ -14,6 +14,7 @@ import androidx.lifecycle.LiveData
 class ConnectionLiveData(private val context: Context) : LiveData<Boolean>() {
 
     private val networkReceiver = object : BroadcastReceiver() {
+        @RequiresApi(Build.VERSION_CODES.M)
         override fun onReceive(context: Context, intent: Intent) {
             if (intent.extras != null) {
                 if (isNetworkConnected()) {

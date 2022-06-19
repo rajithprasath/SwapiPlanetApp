@@ -28,7 +28,7 @@ class PlanetDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        showUserDetails(args.planet)
+        showPlanetDetails(args.planet)
         binding.detailToolbar.setNavigationOnClickListener { findNavController().popBackStack() }
     }
 
@@ -36,9 +36,7 @@ class PlanetDetailFragment : Fragment() {
         binding.progressBar.hide()
     }
 
-
-    private fun showUserDetails(planet: Planet) {
-//        Glide.with(this).load(user.picture.large).into(binding.ivBackDrop)
+    private fun showPlanetDetails(planet: Planet) {
         binding.tbTitle.title = planet.name
         binding.tvClimate.text = planet.climate
         binding.tvOrbital.text = planet.orbital_period
