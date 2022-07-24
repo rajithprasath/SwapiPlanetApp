@@ -6,7 +6,7 @@ This is an app which use Swapi api to fetch planet list
 ### Communication between layers
 1. UI calls method from ViewModel.
 2. ViewModel executes Use case.
-3. Use case executes one or multiple Repositorie function.
+3. Use case executes one or multiple repository function.
 4. The Repository returns data from one or multiple Data Sources. the repository is the single source of truth
 5. Information flows back to the UI where we display the data fetched from data sources.
 
