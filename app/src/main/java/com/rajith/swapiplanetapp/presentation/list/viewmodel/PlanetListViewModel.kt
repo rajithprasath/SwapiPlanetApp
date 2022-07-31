@@ -44,7 +44,8 @@ class PlanetListViewModel @Inject constructor(
                 mutableData.postValue(PlanetResult.Success(result.data))
             }
             is PlanetResult.Error -> {
-                mutableData.postValue(result.exception.let { PlanetResult.Error(it) })
+                mutableData.postValue(result.exception.let {
+                    PlanetResult.Error(it) })
             }
             is PlanetResult.Loading -> {
                 mutableData.postValue(PlanetResult.Loading)
